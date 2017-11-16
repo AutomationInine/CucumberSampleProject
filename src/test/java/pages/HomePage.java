@@ -1,0 +1,28 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+
+/**
+ * Created by Karthik on 10/25/2016.
+ */
+public class HomePage {
+
+    WebDriver driver;
+    public HomePage(WebDriver driver) {
+        this.driver= driver;
+        PageFactory.initElements(driver, this);
+    }
+
+
+    public String getTitile()
+    {
+        String title = driver.getTitle();
+        System.out.println("Title is--"+ title);
+        return title;
+    }
+
+}
