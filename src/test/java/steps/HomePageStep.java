@@ -37,7 +37,7 @@ public class HomePageStep extends BaseUtil{
 
         HomePage homePage = new HomePage(base.Driver);
        String title = homePage.getTitile();
-        org.testng.Assert.assertEquals("GitHub - AutomationInine/Cucumber: This is a simple Cucumber framework designed to write UI test scripts using Selenium and Java",title);
+        org.testng.Assert.assertEquals("GitHub - AutomationInine/CucumberSampleProject",title);
 
     }
 
