@@ -28,7 +28,7 @@ public class HomePageStep extends BaseUtil{
     @Given("^I navigate to GitHub cucumber project landing page$")
     public void i_navigate_to_GitHub_cucumber_project_landing_page() throws Throwable {
 
-        base.Driver.navigate().to("https://github.com/AutomationInine/Cucumber");
+        base.Driver.navigate().to("https://github.com/AutomationInine/CucumberSampleProject");
 
     }
 
