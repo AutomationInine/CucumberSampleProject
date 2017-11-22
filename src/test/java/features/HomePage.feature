@@ -1,4 +1,4 @@
-Feature: LoginFeature
+Feature: Home Feature
   This feature deals with the HomePage functionality of the application
 
   Scenario: Verify read me section of Cucumber project
