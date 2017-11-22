@@ -23,7 +23,7 @@ public class Hook extends BaseUtil{
     public void InitializeTest() {
 
         System.out.println("Opening the browser : Chrome");
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//resources//chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//resources//chromedriverForMac");
         base.Driver = new ChromeDriver();
     }
 
