@@ -10,7 +10,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 /**
  * Created by Karthik on 10/17/2016.
  */
-public class Hook extends BaseUtil{
+public class
+
+Hook extends BaseUtil{
 
 
     private BaseUtil base;
@@ -23,7 +25,11 @@ public class Hook extends BaseUtil{
     public void InitializeTest() {
 
         System.out.println("Opening the browser : Chrome");
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//resources//chromedriver");
+
+       //For MAC
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//resources//ChromeForMac//chromedriver");
+       //For Windows
+      //  System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//resources//ChromeForWindows//chromedriver.exe");
         base.Driver = new ChromeDriver();
     }
 
