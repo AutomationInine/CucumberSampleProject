@@ -27,9 +27,9 @@ Hook extends BaseUtil{
         System.out.println("Opening the browser : Chrome");
 
        //For MAC
-      //  System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//resources//ChromeForMac//chromedriver");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//resources//ChromeForMac//chromedriver");
        //For Windows
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//resources//ChromeForWindows//chromedriver.exe");
+      //  System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//resources//ChromeForWindows//chromedriver.exe");
         base.Driver = new ChromeDriver();
     }
 
