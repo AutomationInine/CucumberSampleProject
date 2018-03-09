@@ -11,6 +11,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="CucumberSampleProject" target="1.5" />
+      <module name="CucumberSampleProject_main" target="1.8" />
+      <module name="CucumberSampleProject_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

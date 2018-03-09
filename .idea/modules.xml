@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CucumberSampleProject.iml" filepath="$PROJECT_DIR$/CucumberSampleProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CucumberSampleProject_main.iml" filepath="$PROJECT_DIR$/.idea/modules/CucumberSampleProject_main.iml" group="CucumberSampleProject" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CucumberSampleProject_test.iml" filepath="$PROJECT_DIR$/.idea/modules/CucumberSampleProject_test.iml" group="CucumberSampleProject" />
     </modules>
   </component>
 </project>
