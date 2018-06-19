@@ -6,7 +6,6 @@ Feature: AamzonSearch Feature
   Scenario: Verify search and adding to Cart functionality of Amazon application
 
     Given I navigate to Amazon landing page
-        And I input valid credentials of "cigniti.automationDemo@gmail.com" and "Cigniti@2017"
     When I search for "iphone" product
     Then I see search results
 
