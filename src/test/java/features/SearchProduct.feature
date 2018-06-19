@@ -1,4 +1,4 @@
-@smoke @release2 @sprint4
+@smoke @release2 @sprint4 @search
 Feature: AamzonSearch Feature
 
   This feature deals with the search functionality of the amazon application

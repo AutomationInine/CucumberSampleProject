@@ -397,8 +397,6 @@ public class ActionEngine extends TestEngineWeb {
 		try {
 			waitForElementByFluentWait(locator);
 			Driver.findElement(locator).click();
-			Driver.findElement(locator).clear();
-			Driver.findElement(locator).clear();
 			Driver.findElement(locator).sendKeys(testdata);
 
 			LOG.info("type " + testdata + " in locator - " + locatorName);

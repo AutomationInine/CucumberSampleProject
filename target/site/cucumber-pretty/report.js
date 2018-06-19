@@ -1,9 +1,9 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("LoginPage.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("SearchProduct.feature");
 formatter.feature({
   "line": 2,
-  "name": "Login Feature",
-  "description": "This feature deals with the Login functionality of the application",
-  "id": "login-feature",
+  "name": "AamzonSearch Feature",
+  "description": "\r\nThis feature deals with the search functionality of the amazon application",
+  "id": "aamzonsearch-feature",
   "keyword": "Feature",
   "tags": [
     {
@@ -12,58 +12,82 @@ formatter.feature({
     },
     {
       "line": 1,
-      "name": "@release1"
+      "name": "@release2"
     },
     {
       "line": 1,
-      "name": "@sprint1"
+      "name": "@sprint4"
+    },
+    {
+      "line": 1,
+      "name": "@search"
     }
   ]
 });
 formatter.before({
-  "duration": 18862568124,
+  "duration": 16014015962,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 5,
-  "name": "Verify login functionality with valid credentails of Amazon application",
+  "line": 6,
+  "name": "Verify search and adding to Cart functionality of Amazon application",
   "description": "",
-  "id": "login-feature;verify-login-functionality-with-valid-credentails-of-amazon-application",
+  "id": "aamzonsearch-feature;verify-search-and-adding-to-cart-functionality-of-amazon-application",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 7,
+  "line": 8,
   "name": "I navigate to Amazon landing page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 8,
-  "name": "I input valid credentials of \"cigniti.automationDemo@gmail.com\" and \"Cigniti@2017\"",
+  "line": 9,
+  "name": "I search for \"iphone\" product",
   "keyword": "When "
 });
 formatter.step({
-  "line": 9,
-  "name": "I see Amazon home page with title as \"\"",
+  "line": 10,
+  "name": "I see search results",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "I add first result to the cart",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 13,
+  "name": "I see cart count is increased by 1 to the earlier cartCount",
   "keyword": "Then "
 });
 formatter.match({
   "location": "LoginSteps.i_navigate_to_Amazon_landing_page()"
 });
 formatter.result({
-  "duration": 196104032,
+  "duration": 174671595,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "cigniti.automationDemo@gmail.com",
-      "offset": 30
-    },
-    {
-      "val": "Cigniti@2017",
-      "offset": 69
+      "val": "iphone",
+      "offset": 14
     }
   ],
-  "location": "LoginSteps.i_input_valid_credentials_of_and(String,String)"
+  "location": "SearchProductsSteps.i_search_for_product(String)"
+});
+formatter.result({
+  "duration": 13627083952,
+  "status": "passed"
+});
+formatter.match({
+  "location": "SearchProductsSteps.i_see_search_results()"
+});
+formatter.result({
+  "duration": 6225903215,
+  "status": "passed"
+});
+formatter.match({
+  "location": "SearchProductsSteps.i_add_first_result_to_the_cart()"
 });
